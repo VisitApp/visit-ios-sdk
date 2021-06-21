@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'VisitIOSSdk_Example' do
+  pod 'VisitIOSSdk', :path => '../'
+
+  target 'VisitIOSSdk_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 2.2.0'
+    pod 'Nimble', '~> 8.0.7'
+  end
+end
