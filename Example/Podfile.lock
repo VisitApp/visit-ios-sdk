@@ -1,0 +1,23 @@
+PODS:
+  - TwilioVideo (4.4.0)
+  - VisitIOSSdk (0.1.0):
+    - TwilioVideo (~> 4.4)
+
+DEPENDENCIES:
+  - VisitIOSSdk (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - TwilioVideo
+
+EXTERNAL SOURCES:
+  VisitIOSSdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TwilioVideo: fcf10b7460e582570887d194b73e75425685d813
+  VisitIOSSdk: 8239b91b6326892113cffe817c565e2e07e5832f
+
+PODFILE CHECKSUM: 7b04f081ce9bb7eb1dce0c10fb7ac97e05100534
+
+COCOAPODS: 1.10.0

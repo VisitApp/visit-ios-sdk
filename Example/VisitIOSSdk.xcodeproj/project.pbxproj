@@ -12,26 +12,13 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		6C8BA2B70158919F6F32FC9A /* Pods_VisitIOSSdk_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3575BC3CFC839F5C6B41EE74 /* Pods_VisitIOSSdk_Example.framework */; };
-		6D94AF4D7405F2A4733312D0 /* Pods_VisitIOSSdk_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B839F8A02DE978F83BDBB5D7 /* Pods_VisitIOSSdk_Tests.framework */; };
+		914BF9A84A0A364CFDECD473 /* Pods_VisitIOSSdk_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF849B52C32D9A6F2E5E41AA /* Pods_VisitIOSSdk_Example.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = VisitIOSSdk;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1CC6B784BF052B39164DE0AF /* Pods-VisitIOSSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitIOSSdk_Example.debug.xcconfig"; path = "Target Support Files/Pods-VisitIOSSdk_Example/Pods-VisitIOSSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		22C4205C1522C12242C31F68 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3575BC3CFC839F5C6B41EE74 /* Pods_VisitIOSSdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisitIOSSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B527083D7546E90FB13C9C2 /* Pods-VisitIOSSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitIOSSdk_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VisitIOSSdk_Tests/Pods-VisitIOSSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		19A34F0977D522C204661E24 /* Pods-VisitIOSSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitIOSSdk_Example.debug.xcconfig"; path = "Target Support Files/Pods-VisitIOSSdk_Example/Pods-VisitIOSSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		22C4205C1522C12242C31F68 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		40A2C0BA26AB213700E639A8 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* VisitIOSSdk_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitIOSSdk_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,14 +26,11 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* VisitIOSSdk_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitIOSSdk_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		82CAEF5D2B2F91E50CFE17FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		AC7A112911A267F5286DA803 /* Pods-VisitIOSSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitIOSSdk_Example.release.xcconfig"; path = "Target Support Files/Pods-VisitIOSSdk_Example/Pods-VisitIOSSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B839F8A02DE978F83BDBB5D7 /* Pods_VisitIOSSdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisitIOSSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC6AD7C75B2861F0D6882CF /* Pods-VisitIOSSdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitIOSSdk_Tests.release.xcconfig"; path = "Target Support Files/Pods-VisitIOSSdk_Tests/Pods-VisitIOSSdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F0DEFCFA726424B19A9AACEE /* VisitIOSSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VisitIOSSdk.podspec; path = ../VisitIOSSdk.podspec; sourceTree = "<group>"; };
+		82CAEF5D2B2F91E50CFE17FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B5EA9846FEB58C645B658801 /* Pods-VisitIOSSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisitIOSSdk_Example.release.xcconfig"; path = "Target Support Files/Pods-VisitIOSSdk_Example/Pods-VisitIOSSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EF849B52C32D9A6F2E5E41AA /* Pods_VisitIOSSdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisitIOSSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DEFCFA726424B19A9AACEE /* VisitIOSSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VisitIOSSdk.podspec; path = ../VisitIOSSdk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,26 +38,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C8BA2B70158919F6F32FC9A /* Pods_VisitIOSSdk_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D94AF4D7405F2A4733312D0 /* Pods_VisitIOSSdk_Tests.framework in Frameworks */,
+				914BF9A84A0A364CFDECD473 /* Pods_VisitIOSSdk_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C179D525857A081030B2A26 /* Frameworks */ = {
+		2C8A4DF4E99E68C4ABD42092 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3575BC3CFC839F5C6B41EE74 /* Pods_VisitIOSSdk_Example.framework */,
-				B839F8A02DE978F83BDBB5D7 /* Pods_VisitIOSSdk_Tests.framework */,
+				EF849B52C32D9A6F2E5E41AA /* Pods_VisitIOSSdk_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,12 +56,9 @@
 		4241D0C18E9F473E3E828C4C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1CC6B784BF052B39164DE0AF /* Pods-VisitIOSSdk_Example.debug.xcconfig */,
-				AC7A112911A267F5286DA803 /* Pods-VisitIOSSdk_Example.release.xcconfig */,
-				5B527083D7546E90FB13C9C2 /* Pods-VisitIOSSdk_Tests.debug.xcconfig */,
-				CEC6AD7C75B2861F0D6882CF /* Pods-VisitIOSSdk_Tests.release.xcconfig */,
+				19A34F0977D522C204661E24 /* Pods-VisitIOSSdk_Example.debug.xcconfig */,
+				B5EA9846FEB58C645B658801 /* Pods-VisitIOSSdk_Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,7 +70,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				4241D0C18E9F473E3E828C4C /* Pods */,
-				2C179D525857A081030B2A26 /* Frameworks */,
+				2C8A4DF4E99E68C4ABD42092 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* VisitIOSSdk_Example.app */,
-				607FACE51AFB9204008FA782 /* VisitIOSSdk_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +107,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				40A2C0BA26AB213700E639A8 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -167,11 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VisitIOSSdk_Example" */;
 			buildPhases = (
-				A6D708F40AF52751B3C5C0BD /* [CP] Check Pods Manifest.lock */,
+				950A17BAF85839B867F27145 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				2D3C37259487E625E1E5B7AE /* [CP] Embed Pods Frameworks */,
+				8148431EC5CE4A0C5CEF6EE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,26 +152,6 @@
 			productName = VisitIOSSdk;
 			productReference = 607FACD01AFB9204008FA782 /* VisitIOSSdk_Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		607FACE41AFB9204008FA782 /* VisitIOSSdk_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VisitIOSSdk_Tests" */;
-			buildPhases = (
-				1EB757672C2E29ECA9FA311E /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				F85E8EA778FC7821737EE86A /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = VisitIOSSdk_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* VisitIOSSdk_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -214,12 +165,8 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = AU9UJ3DSGS;
 						LastSwiftMigration = 0900;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -228,6 +175,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -237,7 +185,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* VisitIOSSdk_Example */,
-				607FACE41AFB9204008FA782 /* VisitIOSSdk_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,39 +200,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EB757672C2E29ECA9FA311E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VisitIOSSdk_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D3C37259487E625E1E5B7AE /* [CP] Embed Pods Frameworks */ = {
+		8148431EC5CE4A0C5CEF6EE9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,17 +211,19 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VisitIOSSdk_Example/Pods-VisitIOSSdk_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/VisitIOSSdk/VisitIOSSdk.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioVideo/TwilioVideo.framework/TwilioVideo",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VisitIOSSdk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VisitIOSSdk_Example/Pods-VisitIOSSdk_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A6D708F40AF52751B3C5C0BD /* [CP] Check Pods Manifest.lock */ = {
+		950A17BAF85839B867F27145 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,26 +245,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F85E8EA778FC7821737EE86A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VisitIOSSdk_Tests/Pods-VisitIOSSdk_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VisitIOSSdk_Tests/Pods-VisitIOSSdk_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -357,23 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* VisitIOSSdk_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -440,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -496,10 +380,12 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CC6B784BF052B39164DE0AF /* Pods-VisitIOSSdk_Example.debug.xcconfig */;
+			baseConfigurationReference = 19A34F0977D522C204661E24 /* Pods-VisitIOSSdk_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AU9UJ3DSGS;
 				INFOPLIST_FILE = VisitIOSSdk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -511,56 +397,18 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC7A112911A267F5286DA803 /* Pods-VisitIOSSdk_Example.release.xcconfig */;
+			baseConfigurationReference = B5EA9846FEB58C645B658801 /* Pods-VisitIOSSdk_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AU9UJ3DSGS;
 				INFOPLIST_FILE = VisitIOSSdk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B527083D7546E90FB13C9C2 /* Pods-VisitIOSSdk_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisitIOSSdk_Example.app/VisitIOSSdk_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEC6AD7C75B2861F0D6882CF /* Pods-VisitIOSSdk_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisitIOSSdk_Example.app/VisitIOSSdk_Example";
 			};
 			name = Release;
 		};
@@ -581,15 +429,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VisitIOSSdk_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
