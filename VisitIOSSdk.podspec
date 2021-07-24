@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VisitIOSSdk'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Visit Health IOS SDK'
   s.swift_versions = '4.0'
 
@@ -38,6 +38,8 @@ Pod::Spec.new do |s|
    s.resource_bundles = {
      'VisitIOSSdk' => ['VisitIOSSdk/Assets/*.png', 'VisitIOSSdk/Classes/*.xib']
    }
+   
+   s.resources = ['VisitIOSSdk/Assets/*.png']
    
    s.pod_target_xcconfig = {
      'PRODUCT_BUNDLE_IDENTIFIER': 'com.getvisitapp.visitIOSSdk'
