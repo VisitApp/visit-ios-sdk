@@ -4,10 +4,11 @@ import WebKit
 
 struct VisitMessage: Decodable {
     let method: String
-    let roomName: String
-    let token: String
-    let doctorName: String
-    let profileImg: String
+    let roomName: String?
+    let token: String?
+    let doctorName: String?
+    let profileImg: String?
+    let url: String?
 }
 
 public class VisitAppView : WKWebView, WKScriptMessageHandler {
@@ -34,11 +35,16 @@ public class VisitAppView : WKWebView, WKScriptMessageHandler {
             let eventData : VisitMessage = try! JSONDecoder().decode(VisitMessage.self, from: bodyAsData)
             switch eventData.method {
             case "startVideoCall":
-                let roomName = eventData.roomName
-                let token = eventData.token
-                let doctorName = eventData.doctorName
-                let profileImg = eventData.profileImg
+                let roomName = eventData.roomName!
+                let token = eventData.token!
+                let doctorName = eventData.doctorName!
+                let profileImg = eventData.profileImg!
                 self.videoCallDelegate?.segueToVideoCall(accessToken: token, roomName: roomName, doctorName: doctorName, doctorProfileImg: profileImg)
+            case "openPDF":
+                let url = eventData.url!
+                if let url = URL(string: url) {
+                    UIApplication.shared.open(url)
+                }
             default:
                 break
             }

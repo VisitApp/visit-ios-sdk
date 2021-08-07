@@ -18,7 +18,7 @@ class ViewController: UIViewController, VisitVideoCallDelegate {
         visitAppView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(visitAppView)
         visitAppView.videoCallDelegate = self
-        visitAppView.load(appUrl: "https://web.getvisitapp.xyz")
+        visitAppView.load(appUrl: "https://care.getvisitapp.xyz")
         let views = ["view" : visitAppView]
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|-[view]-|", options: NSLayoutFormatOptions.alignAllCenterX, metrics: nil, views: views))
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[view]-|", options: NSLayoutFormatOptions.alignAllCenterY, metrics: nil, views: views))

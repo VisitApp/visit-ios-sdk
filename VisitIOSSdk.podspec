@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VisitIOSSdk'
-  s.version          = '0.3.2'
+  s.version          = '0.4.0'
   s.summary          = 'Visit Health IOS SDK'
   s.swift_versions = '4.0'
 
