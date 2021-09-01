@@ -19,6 +19,8 @@
                 <outlet property="previewViewTopConstraint" destination="5Nn-Py-F3T" id="HMm-6v-6CV"/>
                 <outlet property="previewViewTrailingConstraint" destination="R98-9z-2SF" id="qIZ-gU-Poa"/>
                 <outlet property="previewViewWidthConstraint" destination="xov-fm-rA1" id="kyp-ib-SHe"/>
+                <outlet property="toggleAudioImageView" destination="YGD-9r-Rlp" id="B7e-W5-UNw"/>
+                <outlet property="toggleVideoImageView" destination="wf9-BX-c4I" id="1Gu-Wq-GmA"/>
                 <outlet property="videoControlContainer" destination="gCf-at-hC3" id="q50-zV-1LT"/>
                 <outlet property="view" destination="iN0-l3-epB" id="4Zf-DD-Oap"/>
             </connections>
@@ -66,35 +68,35 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ivP-Ht-uyO">
-                            <rect key="frame" x="42" y="100" width="247" height="20"/>
+                            <rect key="frame" x="42" y="90" width="247" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf9-BX-c4I" userLabel="Video off button">
-                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="20" id="U6Z-ah-pe7"/>
-                                        <constraint firstAttribute="height" constant="20" id="xQa-Uf-qq0"/>
+                                        <constraint firstAttribute="width" constant="30" id="U6Z-ah-pe7"/>
+                                        <constraint firstAttribute="height" constant="30" id="xQa-Uf-qq0"/>
                                     </constraints>
-                                    <state key="normal" image="video-off.png"/>
+                                    <state key="normal" image="Camera_On.png"/>
                                     <connections>
                                         <action selector="toggleVideo:" destination="-1" eventType="touchUpInside" id="z1O-4w-hv7"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGD-9r-Rlp" userLabel="Mic button">
-                                    <rect key="frame" x="113.5" y="0.0" width="20" height="20"/>
+                                    <rect key="frame" x="108.5" y="0.0" width="30" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="20" id="ROT-VO-IlK"/>
-                                        <constraint firstAttribute="height" constant="20" id="Z59-0t-ovK"/>
+                                        <constraint firstAttribute="width" constant="30" id="ROT-VO-IlK"/>
+                                        <constraint firstAttribute="height" constant="30" id="Z59-0t-ovK"/>
                                     </constraints>
-                                    <state key="normal" image="mute.png"/>
+                                    <state key="normal" image="Mic_On.png"/>
                                     <connections>
                                         <action selector="toggleMic:" destination="-1" eventType="touchUpInside" id="MOJ-Ov-2dK"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol2-X2-IiL" userLabel="Flip camera button">
-                                    <rect key="frame" x="227" y="0.0" width="20" height="20"/>
+                                    <rect key="frame" x="217" y="0.0" width="30" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="20" id="7vC-ed-iuA"/>
-                                        <constraint firstAttribute="width" constant="20" id="t2J-6o-yjW"/>
+                                        <constraint firstAttribute="height" constant="30" id="7vC-ed-iuA"/>
+                                        <constraint firstAttribute="width" constant="30" id="t2J-6o-yjW"/>
                                     </constraints>
                                     <state key="normal" image="switch-camera.png"/>
                                     <connections>
@@ -103,7 +105,7 @@
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="20" id="208-6T-F4f"/>
+                                <constraint firstAttribute="height" constant="30" id="208-6T-F4f"/>
                             </constraints>
                         </stackView>
                     </subviews>
@@ -112,7 +114,7 @@
                         <constraint firstAttribute="trailing" secondItem="ujt-k1-U7j" secondAttribute="trailing" constant="50" id="Dvx-qd-547"/>
                         <constraint firstItem="npN-FS-zah" firstAttribute="leading" secondItem="gCf-at-hC3" secondAttribute="leading" constant="20" id="E33-wO-nf3"/>
                         <constraint firstAttribute="trailing" secondItem="ivP-Ht-uyO" secondAttribute="trailing" constant="42" id="R9t-72-8Ft"/>
-                        <constraint firstItem="ivP-Ht-uyO" firstAttribute="top" secondItem="ujt-k1-U7j" secondAttribute="bottom" constant="18" id="Ra3-CW-elF"/>
+                        <constraint firstItem="ivP-Ht-uyO" firstAttribute="top" secondItem="ujt-k1-U7j" secondAttribute="bottom" constant="8" id="Ra3-CW-elF"/>
                         <constraint firstItem="ujt-k1-U7j" firstAttribute="leading" secondItem="gCf-at-hC3" secondAttribute="leading" constant="50" id="Ske-KZ-fpo"/>
                         <constraint firstAttribute="height" constant="138" id="WEF-DV-24d"/>
                         <constraint firstItem="ivP-Ht-uyO" firstAttribute="leading" secondItem="gCf-at-hC3" secondAttribute="leading" constant="42" id="eab-e3-Jam"/>
@@ -165,11 +167,11 @@
         </view>
     </objects>
     <resources>
+        <image name="Camera_On.png" width="20" height="20"/>
+        <image name="Mic_On.png" width="20" height="20"/>
         <image name="back.png" width="14" height="14"/>
         <image name="disconnect.png" width="42" height="42"/>
-        <image name="mute.png" width="20" height="20"/>
         <image name="switch-camera.png" width="20" height="20"/>
-        <image name="video-off.png" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -37,6 +37,8 @@ public class VideoCallViewController : UIViewController {
     @IBOutlet weak var previewViewWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var doctorImageView: UIImageView!
     @IBOutlet weak var doctorName: UILabel!
+    @IBOutlet weak var toggleVideoImageView: UIButton!
+    @IBOutlet weak var toggleAudioImageView: UIButton!
     
     
     deinit {
@@ -177,21 +179,42 @@ public class VideoCallViewController : UIViewController {
     }
     
     @IBAction func toggleMic(_ sender: Any) {
+        let podBundle = Bundle(for: VideoCallViewController.self)
         if (self.localAudioTrack != nil) {
             self.localAudioTrack?.isEnabled = !(self.localAudioTrack?.isEnabled)!
             
             // Update the button title
-//            if (self.localAudioTrack?.isEnabled == true) {
-//                self.micButton.setTitle("Mute", for: .normal)
-//            } else {
-//                self.micButton.setTitle("Unmute", for: .normal)
-//            }
+            if (self.localAudioTrack?.isEnabled == true) {
+                let muteIcon = UIImage(named: "Mic_On.png", in: podBundle, compatibleWith: nil)
+//                let muteIcon = UIImage(named: "mute.png")
+                self.toggleAudioImageView.setImage(muteIcon, for: .normal)
+            } else {
+                let muteIcon = UIImage(named: "mute.png", in: podBundle, compatibleWith: nil)
+//                let muteIcon = UIImage(named: "Mic_On.png")
+                self.toggleAudioImageView.setImage(muteIcon, for: .normal)
+            }
         }
     }
     
     @IBAction func toggleVideo(_ sender: Any) {
+        print("Toggling Video \(self.localVideoTrack?.isEnabled)")
+        let podBundle = Bundle(for: VideoCallViewController.self)
         if (self.localVideoTrack != nil) {
             self.localVideoTrack?.isEnabled = !(self.localVideoTrack?.isEnabled)!
+            if (self.localVideoTrack?.isEnabled == true) {
+                print("Bundle \(podBundle.bundleIdentifier!)")
+                let videoIcon = UIImage(named: "Camera_On.png", in: podBundle, compatibleWith: nil)
+//                let videoIcon = UIImage(named: "video-off.png")
+                print("Icon \(videoIcon)")
+                self.toggleVideoImageView.setImage(videoIcon, for: .normal)
+//                self.toggleVideoImageView.imageView?.image = videoIcon;
+            } else {
+                print("Bundle \(podBundle.bundleIdentifier!)")
+                let videoIcon = UIImage(named: "video-off.png", in: podBundle, compatibleWith: nil)
+//                let videoIcon = UIImage(named: "Camera_On.png")
+                self.toggleVideoImageView.setImage(videoIcon, for: .normal)
+//                self.toggleVideoImageView.imageView?.image = videoIcon;
+            }
         }
     }
     
