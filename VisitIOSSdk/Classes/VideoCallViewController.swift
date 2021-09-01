@@ -197,19 +197,15 @@ public class VideoCallViewController : UIViewController {
     }
     
     @IBAction func toggleVideo(_ sender: Any) {
-        print("Toggling Video \(self.localVideoTrack?.isEnabled)")
         let podBundle = Bundle(for: VideoCallViewController.self)
         if (self.localVideoTrack != nil) {
             self.localVideoTrack?.isEnabled = !(self.localVideoTrack?.isEnabled)!
             if (self.localVideoTrack?.isEnabled == true) {
-                print("Bundle \(podBundle.bundleIdentifier!)")
                 let videoIcon = UIImage(named: "Camera_On.png", in: podBundle, compatibleWith: nil)
 //                let videoIcon = UIImage(named: "video-off.png")
-                print("Icon \(videoIcon)")
                 self.toggleVideoImageView.setImage(videoIcon, for: .normal)
 //                self.toggleVideoImageView.imageView?.image = videoIcon;
             } else {
-                print("Bundle \(podBundle.bundleIdentifier!)")
                 let videoIcon = UIImage(named: "video-off.png", in: podBundle, compatibleWith: nil)
 //                let videoIcon = UIImage(named: "Camera_On.png")
                 self.toggleVideoImageView.setImage(videoIcon, for: .normal)

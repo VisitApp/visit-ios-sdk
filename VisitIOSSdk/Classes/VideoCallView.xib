@@ -148,11 +148,9 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="VsW-JK-443" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="2H0-7m-kkv"/>
                 <constraint firstItem="JqN-Cj-zK4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Nn-Py-F3T"/>
                 <constraint firstItem="gCf-at-hC3" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.8" id="G2W-wc-U03"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JqN-Cj-zK4" secondAttribute="trailing" id="R98-9z-2SF"/>
-                <constraint firstItem="VsW-JK-443" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="55" id="WUA-rD-vKG"/>
                 <constraint firstItem="gCf-at-hC3" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="WvN-oT-Mpp"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gCf-at-hC3" secondAttribute="bottom" constant="100" id="k08-ph-b4n"/>
                 <constraint firstItem="JqN-Cj-zK4" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="u0o-Dx-E9Z"/>
