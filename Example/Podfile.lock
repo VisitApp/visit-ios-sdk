@@ -1,6 +1,6 @@
 PODS:
   - TwilioVideo (4.4.0)
-  - VisitIOSSdk (0.4.0):
+  - VisitIOSSdk (0.5.1):
     - TwilioVideo (~> 4.4)
 
 DEPENDENCIES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   TwilioVideo: fcf10b7460e582570887d194b73e75425685d813
-  VisitIOSSdk: 7bb5f98e5aedb42ae7c610a58faee9dc2d84be28
+  VisitIOSSdk: bc3c46f87145ad2699fa5832bcfe46d7d539ef50
 
 PODFILE CHECKSUM: 7b04f081ce9bb7eb1dce0c10fb7ac97e05100534
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2

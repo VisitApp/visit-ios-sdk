@@ -32,7 +32,7 @@ public class VisitAppView : WKWebView, WKScriptMessageHandler {
         if let body = message.body as? String {
             print("Body is \(body)")
             let bodyAsData = body.data(using: .utf8)!
-            let eventData : VisitMessage = try! JSONDecoder().decode(VisitMessage.self, from: bodyAsData)
+            guard let eventData : VisitMessage = try? JSONDecoder().decode(VisitMessage.self, from: bodyAsData) else { return }
             switch eventData.method {
             case "startVideoCall":
                 let roomName = eventData.roomName!
