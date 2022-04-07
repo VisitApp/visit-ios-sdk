@@ -45,6 +45,13 @@ public class VisitAppView : WKWebView, WKScriptMessageHandler {
                 if let url = URL(string: url) {
                     UIApplication.shared.open(url)
                 }
+            case "closeView":
+                self.videoCallDelegate?.navigationController?.popViewController(animated: true)
+                self.configuration.userContentController.removeAllUserScripts()
+                self.removeFromSuperview()
+                self.navigationDelegate = nil
+                self.scrollView.delegate = nil
+                self.stopLoading()
             default:
                 break
             }
