@@ -10,6 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 - Supports iOS version >=11.0
 - Please ensure that you have added permission texts for the following usages in your Info.plist file - Privacy - Camera Usage Description, Privacy - Local Network Usage Description, Privacy - Microphone Usage Description
+- Add NSLocationWhenInUseUsageDescription in info.plist if the app requires user's location
 - Enable the "Background modes" capability for Audio, Airplay, and Picture in Picture in your Signings and Capabilites tab for your target
 
 ## Installation
