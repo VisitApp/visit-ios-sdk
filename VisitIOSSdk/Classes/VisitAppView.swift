@@ -9,6 +9,8 @@ struct VisitMessage: Decodable {
     let doctorName: String?
     let profileImg: String?
     let url: String?
+    let email: String?
+    let subject: String?
 }
 
 public class VisitAppView : WKWebView, WKScriptMessageHandler {
@@ -44,6 +46,17 @@ public class VisitAppView : WKWebView, WKScriptMessageHandler {
                 let url = eventData.url!
                 if let url = URL(string: url) {
                     UIApplication.shared.open(url)
+                }
+            case "mailTo":
+                let email = eventData.email!
+                let subject = eventData.subject!
+                var mail = "mailto:\(email)?subject=\(subject)"
+                mail = mail.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? ""
+                let link = URL(string: mail)
+                if let link = link {
+                    if UIApplication.shared.canOpenURL(link) {
+                        UIApplication.shared.open(link, options: [:])
+                    }
                 }
             case "closeView":
                 self.videoCallDelegate?.navigationController?.popViewController(animated: true)
